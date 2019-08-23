@@ -8,7 +8,7 @@ emot_hash = {'get_meaning' => {}, 'get_emoticon' => {}}
   english_emoticon = value[0]
   japanese_emoticon = value[1]
   emot_hash['get_meaning'][japanese_emoticon] = key
-  emot_hash['get_emoticon'][]
+  emot_hash['get_emoticon'][english_emoticon] = [japanese_emoticon]
   
    end
 p emot_hash
