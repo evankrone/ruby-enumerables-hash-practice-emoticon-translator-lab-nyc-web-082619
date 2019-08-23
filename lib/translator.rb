@@ -7,7 +7,8 @@ emot_hash = {'get_meaning' => {}, 'get_emoticon' => {}}
   emots.map do |key, value|
   english_emoticon = value[0]
   japanese_emoticon = value[1]
-  emot_hash['get_emoticon'][japanese_emoticon] = key
+  emot_hash['get_meaning'][japanese_emoticon] = key
+  emot_hash['get_emoticon'][]
   
    end
 p emot_hash
