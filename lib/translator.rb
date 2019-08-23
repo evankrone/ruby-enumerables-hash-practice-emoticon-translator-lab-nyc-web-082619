@@ -3,10 +3,7 @@
 def load_library(file)
 require 'yaml'
 emots = YAML.load(File.read(file))
-emot_hash = {
-  'get_emoticon' => {},
-  'get_meaning' => {}
-}
+emot_hash = {'get_emoticon' => {}, 'get_meaning' => {}}
   emots.each do |key, value|
   emot_hash['get_emoticon'][value[0]] = emots[key][1]
   emot_hash['get_meaning'][value] = key
